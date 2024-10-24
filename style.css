@@ -1,0 +1,317 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons svg {
+    fill: #fff;
+    height: 24px;
+    width: 24px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-section {
+    width: 55%;
+    text-align: left;
+}
+
+.left-section h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 100px;
+}
+
+.left-section p {
+    font-size: 24px;
+    line-height: 1.5;
+    width: 550px;
+    margin-left: 89px;
+}
+
+.right-section {
+    width: 50%;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-button {
+    position: absolute;
+    bottom: 70px;
+    right: 270px; 
+    text-align: center;
+    width: 100%; 
+}
+
+
+.portfolio-button button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    height: 25px;
+    bottom: 0;
+}
+
+footer ul{
+    list-style-type:none ;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+}
+
+footer ul li{
+    display: inline-block; 
+    width: calc(50% - 10px); 
+    margin-bottom: 10px; 
+    vertical-align: top; 
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.left-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.left-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.download-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    background-color: #333; 
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #0056b3; 
+}
+
+
+.left-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.left-section a {
+    color: #2800f0;
+    text-decoration: none;
+}
+
+.left-section a:hover {
+    text-decoration: underline;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    background-color: #333; 
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #0056b3; 
+}
+
+.right-section a{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 80px;
+}
+
+.ver-portifolio a{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 80px;
+}
+
+.portfolio-item{
+    width: 1px;
+    height: 1px;
+}
+
+.ver-portifolio-responsivo{
+    display: none;
+}
+
+.contato-responsivo{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      
+    }
+    .right-section{
+        display: none;
+    }
+    header{
+        width: 100vh;
+    }
+    .left-section p{
+        font-size: 32px;
+    }
+    .portfolio-button{
+        margin-top: 50px;
+    }
+    .ver-portifolio{
+        display: none;
+    }
+    .ver-portifolio-responsivo{
+        display: inline;
+    }
+    .ver-portifolio-responsivo a{
+    position: absolute;
+    text-align: center;
+    width: 100%; 
+     }
+    .contato-responsivo{
+        display: inline;
+    }
+    .contato-responsivo a{
+    position: absolute;
+    text-align: center;
+    width: 100%; 
+    padding-top: 20px;
+         }
+    .ver-portifolio-responsivo button{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    }
+    .github-link{
+    position: absolute;
+    text-align: right;
+    width: 100%;     
+    }
+    .portfolio-item img{
+        width: 250px;
+        height: 300px;
+    }
+    .portfolio {
+        width: 100%;
+    }
+    .left-section form{ 
+        font-size: 32px;
+        width: 100%;
+    }
+  }
